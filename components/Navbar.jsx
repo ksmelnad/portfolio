@@ -5,7 +5,7 @@ import { SunIcon } from "@heroicons/react/24/solid";
 import { MoonIcon } from "@heroicons/react/24/solid";
 
 function Navbar() {
-  const { theme, setTheme } = useTheme("dark");
+  const { theme, setTheme } = useTheme();
 
   return (
     <header className="fixed top-0 w-full bg-white dark:bg-slate-900 py-3">
@@ -42,6 +42,7 @@ function Navbar() {
               {theme === "light" ? (
                 <MoonIcon className="w-6 h-6 pt-2 text-gray-600" />
               ) : (
+                // <span>Moon</span>
                 <SunIcon className="w-6 h-6 pt-2 text-white" />
               )}
             </button>

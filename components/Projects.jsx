@@ -5,6 +5,28 @@ import { Github } from "./SVGs";
 function Projects() {
   const myprojects = [
     {
+      title: "Enlighten Guru",
+      featured: true,
+      liveUrl: "https://enlightenguru.vercel.app",
+      // gitUrl: "https://github.com/ksmelnad/yogakshema-new",
+      description: "E-learning platform",
+      url: "enlightenguru.vercel.app",
+      image: "image",
+      techs: [
+        "Next",
+        "React",
+        "Stripe",
+        "Sanity",
+        "Firebase",
+        "TailwindCSS",
+        "OpenAI API",
+        "Pinecone",
+        "Git",
+        "Github",
+        "Vercel",
+      ],
+    },
+    {
       title: "Yogakshema Gurukulam",
       featured: true,
       liveUrl: "https://yogakshema.vercel.app",
@@ -24,7 +46,7 @@ function Projects() {
     },
     {
       title: "IndicGPT",
-      featured: true,
+      featured: false,
       liveUrl: "https://indicgpt.vercel.app",
       description: "ChatGPT for Indian Philosophical Texts",
       image: "image",
@@ -41,7 +63,7 @@ function Projects() {
     },
     {
       title: "One Tennis",
-      featured: true,
+      featured: false,
       liveUrl: "https://one-tennis.onrender.com",
       gitUrl: "https://github.com/ksmelnad/onetennis-mern-app",
       description: "Tennis e-commerce website (demo)",
@@ -60,7 +82,7 @@ function Projects() {
     },
     {
       title: "Sanskrit CMS",
-      featured: true,
+      featured: false,
       liveUrl: "https://sanskrit-cms-frontend.onrender.com/",
       gitUrl: "https://github.com/ksmelnad/sanskrit-cms-frontend",
       description: "CMS for Sanskrit Texts Management",
@@ -100,7 +122,7 @@ function Projects() {
           {myprojects.map((project, index) => (
             <div
               key={index}
-              className="flex flex-col py-5 space-y-3 px-2 bg-gray-200 shadow-sm dark:bg-slate-800/75 rounded"
+              className="flex flex-col py-5 space-y-3 px-2 bg-stone-100 shadow-sm dark:bg-slate-800/75 rounded hover:shadow-md transition duration-300 ease-in-out"
             >
               {project.featured ? (
                 <h3 className="text-sm text-teal-700 dark:text-teal-300">
@@ -130,7 +152,7 @@ function Projects() {
               <div className="flex flex-wrap gap-1 text-sm">
                 {project.techs.map((tech, index) => (
                   <span
-                    className="px-1 bg-gray-400 dark:bg-slate-600 rounded"
+                    className="px-1 bg-stone-300 dark:bg-slate-600 rounded"
                     key={index}
                   >
                     {tech}
