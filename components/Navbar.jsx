@@ -1,11 +1,21 @@
 "use client";
-
+import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { SunIcon } from "@heroicons/react/24/solid";
 import { MoonIcon } from "@heroicons/react/24/solid";
 
 function Navbar() {
-  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme("light");
+
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <header className="fixed top-0 w-full bg-white dark:bg-slate-900 py-3">
@@ -35,10 +45,12 @@ function Navbar() {
           <li>
             <button
               onClick={() => {
-                setTheme(theme === "light" ? "dark" : "light");
+                setTheme(
+                  theme === "light" || theme === "system" ? "dark" : "light"
+                );
               }}
             >
-              {theme === "light" || theme === "" ? (
+              {theme === "light" || theme === "system" ? (
                 <MoonIcon className="w-6 h-6 pt-2 text-gray-600" />
               ) : (
                 <SunIcon className="w-6 h-6 pt-2 text-white" />

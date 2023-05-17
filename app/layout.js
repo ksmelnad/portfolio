@@ -13,8 +13,8 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      style={{ colorScheme: "dark" }} // <--
-      className={"dark"} // <--
+      style={{ colorScheme: "light" }} // <--
+      className={"light"} // <--
     >
       <head>
         <title>Keshav's Portfolio</title>
