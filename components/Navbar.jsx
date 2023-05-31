@@ -18,8 +18,15 @@ function Navbar() {
   }
 
   return (
-    <header className="fixed top-0 w-full bg-white dark:bg-slate-900 py-3">
-      <nav className="container mx-auto px-4 py-2">
+    <header className="fixed top-0 z-50 w-full">
+      <nav
+        className="container mx-auto px-4 py-2 max-w-5xl 
+      backdrop-filter backdrop-blur-lg 
+      bg-white/60 
+      bg-opacity-30 border-b border-gray-200
+      dark:bg-slate-900/60  
+      dark:border-slate-700"
+      >
         <ul className="flex items-center justify-end space-x-5 md:space-x-10 text-sm">
           <li>
             <a className="navItem" href="#projects">

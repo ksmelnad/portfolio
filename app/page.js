@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="relative">
       <Navbar />
-      <main className="dark:bg-slate-900 dark:text-slate-300">
+      <main className="dark:bg-slate-900 dark:text-slate-300 text-gray-800">
         <Hero />
         <Projects />
         <Experience />

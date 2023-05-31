@@ -4,7 +4,7 @@ import { Github, Linkedin } from "./SVGs";
 function Contact() {
   return (
     <section className="w-full pb-10">
-      <div className="container max-w-2xl mx-auto px-4 py-4 flex flex-col space-y-4">
+      <div className="container max-w-5xl mx-auto px-4 py-4 flex flex-col space-y-4">
         <p id="contact" className="pt-7"></p>
         <h2 className="sectionTitle">Contact</h2>
         <div className="flex space-x-3 items-center">

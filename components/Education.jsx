@@ -1,9 +1,7 @@
-import React from "react";
-
 function Educatoin() {
   return (
     <section className="w-full scroll-smooth">
-      <div className="container max-w-2xl  mx-auto px-4 py-4">
+      <div className="container max-w-5xl  mx-auto px-4 py-4">
         <p id="education" className="pt-7"></p>
         <h2 className="sectionTitle">Education</h2>
         <div>

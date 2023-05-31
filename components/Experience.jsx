@@ -1,10 +1,9 @@
-import React from "react";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 
 function Experience() {
   return (
     <section className="w-full">
-      <div className="container max-w-2xl mx-auto px-4 py-4">
+      <div className="container max-w-5xl mx-auto px-4 py-4">
         <p id="experience" className="pt-7"></p>
         <h2 className="sectionTitle">Experience</h2>
         <div>

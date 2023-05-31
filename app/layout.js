@@ -1,20 +1,13 @@
 "use client";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import { Open_Sans } from "next/font/google";
-
-const openSans = Open_Sans({
-  weight: ["300", "400", "500", "600", "700", "800"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
 
 export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      style={{ colorScheme: "light" }} // <--
-      className={"light"} // <--
+      style={{ colorScheme: "light" }}
+      className="light scroll-smooth"
     >
       <head>
         <title>Keshav's Portfolio</title>
@@ -25,7 +18,7 @@ export default function RootLayout({ children }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={openSans.className}>
+      <body>
         <ThemeProvider enableSystem="true" attribute="class">
           {children}
         </ThemeProvider>
