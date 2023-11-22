@@ -20,7 +20,7 @@ function Experience() {
                 Developing a web application to render Sanskrit Literature with
                 various functionalities using NLP techniques{" "}
               </li>
-              <li>Tech: React, MongoDB, Django, Apache Solr, </li>
+              <li>Tech: React, MongoDB, Django, Apache Solr </li>
             </ul>
           </div>
           <div className="pt-3">
@@ -35,18 +35,20 @@ function Experience() {
             <ul className="pl-5 pt-2 list-outside list-disc marker:text-teal-700 dark:marker:text-teal-300">
               <li>
                 Along with my research on History of Astronomy and Mathematics,
-                I mentored four B.Tech. students in building a web application
-                which decodes and encodes ancient Indian numerical systems
-              </li>
-              <li>Tech: Python, Flask, CSS</li>
-              <li>
+                I mentored four B.Tech. students in building a web application,{" "}
                 <a
                   href="https://students.iitgn.ac.in/homi-project"
                   target="_blank"
+                  className="text-blue-400 font-semibold hover:underline"
                 >
-                  <ArrowTopRightOnSquareIcon className="w-6 h-6" />
+                  {" "}
+                  INDEA
+                  <ArrowTopRightOnSquareIcon className="ml-1 w-4 h-4 inline-block -translate-y-0.5" />
                 </a>
+                , which decodes and encodes ancient Indian numerical systems.
               </li>
+              <li>Tech: Python, Flask, JavaScript, CSS, HTML</li>
+              <li></li>
             </ul>
           </div>
         </div>

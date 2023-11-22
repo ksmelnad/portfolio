@@ -5,12 +5,35 @@ import { Github } from "./SVGs";
 function Projects() {
   const myprojects = [
     {
+      title: "Wise Arcade",
+      featured: true,
+      liveUrl: "https://wisearcade.com",
+      // gitUrl: "",
+      description: "Fun and Educational Activities for Kids",
+      url: "wisearcade.com",
+      src: "/wisearcadeHomePage.png",
+      techs: [
+        "Next",
+        "React",
+        "ReCharts",
+        "Stripe",
+        "MongoDB",
+        "Prisma",
+        "TailwindCSS",
+        "OpenAI API",
+        "Pinecone",
+        "Git",
+        "Github",
+        "Vercel",
+      ],
+    },
+    {
       title: "Enlighten Guru",
       featured: true,
       liveUrl: "https://enlightenguru.vercel.app",
       // gitUrl: "https://github.com/ksmelnad/yogakshema-new",
       description: "E-learning platform",
-      url: "enlightenguru.vercel.app",
+      url: "enlightenguru.org",
       src: "/enlightenguruHomepage.png",
       techs: [
         "Next",
